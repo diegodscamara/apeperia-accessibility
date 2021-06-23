@@ -63,7 +63,7 @@
     </nav>
   </header>
 
-  <main class="conteudo">
+  <main class="conteudo" role="main">
 
     <section class="secaoDestaque">
       <h1 class="secaoDestaque-titulo">
@@ -337,51 +337,51 @@
           </p>
 
           <div class="contatoCampo contatoCampo--sucesso">
-            <label>Nome: </label>
-            <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required>
+            <label for="nome" id="nome">Nome: </label>
+            <input type="text" class="contatoCampo--validouFoi" value="Natan Souza" required placeholder="Nome">
           </div>  
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Email: </label>
-            <input type="email" class="contatoCampo--validouErro" required>
+            <label for="email" id="email">Email: </label>
+            <input type="email" class="contatoCampo--validouErro" required placeholder="Email">
             <span class="contatoCampo-msg contatoCampo-msg--erro">
               Você quis dizer <a href="#">gmail.com?</a>
             </span>
           </div>
 
           <div class="contatoCampo contatoCampo--erro">
-            <label>Telefone: </label>
+            <label for="telefone" id="telefone">Telefone: </label>
             <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751">
             <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
           </div>     
 
           <div class="contatoCampo">
-            <label>CEP: </label>
-            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300" required>
+            <label for="cep" id="cep">CEP: </label>
+            <input type="text" maxlength="8" placeholder="Exemplo: 04101-300">
           </div>
 
           <div class="contatoCampo">
-            <label>Endereço: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+            <label for="endereco" id="endereco">Endereço: </label>
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
           </div>   
 
           <div class="contatoCampo">
-            <label>Bairro: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariana">
+            <label for="bairro" id="bairro">Bairro: </label>
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
           </div>   
 
           <div class="contatoCampo">
-            <label>Cidade: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+            <label for="cidade" id="cidade">Cidade: </label>
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
           </div>   
 
           <div class="contatoCampo">
-            <label>Estado: </label>
-            <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+            <label for="estado" id="estado">Estado: </label>
+            <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
           </div>   
 
           <div class="contatoCampo">
-            <label>Mensagem: </label>
+            <label for="mensagem" id="mensagem">Mensagem: </label>
             <textarea name="" cols="30" rows="10" required></textarea>
           </div>
 
